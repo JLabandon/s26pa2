@@ -141,20 +141,3 @@ class Game:
             if self.can_move():
                 found_dir = True
         return not found_dir
-
-    # WARNING: Deprecated: do not call this function in ai.py
-    def get_state(self):
-        return (self.tile_matrix, self.score)
-
-    # WARNING: Deprecated: do not call this function in ai.py
-    def reset(self, init_tile_matrix = None, init_score = 0):
-        self.undoMat = []
-        self.score = init_score
-        if init_tile_matrix == None:
-            self.tile_matrix = self.new_tile_matrix()
-            self.place_random_tile()
-            self.place_random_tile()
-        else:
-            self.tile_matrix = copy.deepcopy(init_tile_matrix)
-        self.board_size = len(self.tile_matrix)
-
