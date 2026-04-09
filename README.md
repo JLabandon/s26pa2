@@ -79,7 +79,7 @@ Grading
 All test cases are given in `test_states` and `test_sols`. 
 
 - Full (5 points): Passes all given tests.
-- Almost (3 points): Fails some given tests.
-- Nothing (0 point): No attempt or fails almost all given tests.
+- Almost (3 points): Passes at least 50% of given tests.
+- Nothing (0 point): No attempt or passes less than 50% of given tests.
 
 Late Policy: -1 point every late day (0 is floor)
